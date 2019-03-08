@@ -7,9 +7,9 @@
       app
     >
       <v-list dense>
-        <v-list-tile>
+        <v-list-tile :to="{ name: 'welcome' }">
           <v-list-tile-action>
-            <v-icon>home</v-icon>
+              <v-icon>home</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>Home</v-list-tile-title>
