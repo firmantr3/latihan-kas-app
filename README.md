@@ -1,6 +1,4 @@
-# ftn-vue-pwa
-
-my vuejs scaffolding frontend for laravel apps. [see demo](https://firmantr3.github.io/ftn-vue-pwa-demo)
+# kas-app latihan
 
 ## Project setup
 ```
