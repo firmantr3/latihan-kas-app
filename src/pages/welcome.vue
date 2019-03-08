@@ -1,31 +1,28 @@
 <template>
-  <div>
-    <div class="top-right links">
-      <template v-if="authenticated">
-        <router-link :to="{ name: 'home' }">
-          {{ $t('home') }}
-        </router-link>
-      </template>
-      <template v-else>
-        <router-link :to="{ name: 'login' }">
-          {{ $t('login') }}
-        </router-link>
-        <router-link :to="{ name: 'register' }">
-          {{ $t('register') }}
-        </router-link>
-      </template>
-    </div>
-
-    <div class="text-center">
-      <div class="title mb-4">
-        {{ title }}
-      </div>
-
-      <div class="links">
-        <a href="https://github.com/cretueusebiu/laravel-vue-spa">Forked from Laravel Vue SPA</a>
-      </div>
-    </div>
-  </div>
+  <v-container fluid grid-list-lg>
+    <v-layout row wrap>
+      <v-flex>
+        <v-card>
+          <v-toolbar>
+             <v-toolbar-title>List Kas</v-toolbar-title>
+          </v-toolbar>
+          <v-card-text style="height: 300px;" class="grey lighten-5"></v-card-text>
+          <v-card-text style="height: 100px; position: relative">
+            <v-btn
+              absolute
+              dark
+              fab
+              top
+              right
+              color="pink"
+            >
+              <v-icon>add</v-icon>
+            </v-btn>
+          </v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
