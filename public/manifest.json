@@ -1,6 +1,6 @@
 {
-  "name": "ftn-vue-pwa",
-  "short_name": "ftn-vue-pwa",
+  "name": "Kas App",
+  "short_name": "Kas",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
