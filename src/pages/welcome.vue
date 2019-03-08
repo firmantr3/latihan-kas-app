@@ -26,7 +26,6 @@
                   v-else
                   :key="item.nominal"
                   avatar
-                  @click=""
                 >
                   <v-list-tile-avatar>
                     <i class="fa fa-fw" :class="[item.icon, iconTextColor(item.icon)]"></i>
@@ -48,6 +47,7 @@
               top
               right
               color="pink"
+              @click="tambah"
             >
               <v-icon>add</v-icon>
             </v-btn>
@@ -103,6 +103,10 @@ export default {
       }
 
       return "red--text"
+    },
+
+    tambah() {
+      this.$router.push({ name: 'tambah' })
     }
   }
 }
